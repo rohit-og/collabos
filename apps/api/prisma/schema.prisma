@@ -32,6 +32,7 @@ model User {
   // Relations
   ownedWorkspaces  Workspace[]       @relation("WorkspaceOwner")
   memberships      WorkspaceMember[]
+  refreshTokens    RefreshToken[]
 
   @@map("users")
 }
